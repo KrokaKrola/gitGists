@@ -30,6 +30,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 * design state structure (schematicaly)
 * add fonts and font-awesome
 * on enter/button click search
+* complete to implement structure
+* add some base styling
 
 
 ### Done from Todo list

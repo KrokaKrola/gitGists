@@ -28,7 +28,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 * create components schema
 * choose the lib for 'code-block' preview
 * design state structure (schematicaly)
+* add fonts and font-awesome
+* on enter/button click search
 
 
 ### Done from Todo list
-[x] - none
+[X] - FOLDER ORGANIZATION

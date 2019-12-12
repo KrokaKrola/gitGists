@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import GistsList from './components/GistsList';
 
 const BASE_QUERY = 'https://api.github.com/';
-const TOKEN = '62ea38b937f0e12701e98476472889f9b03e83a2';
+const TOKEN = '';
 
 const useStyles = makeStyles(theme => ({
   main: {

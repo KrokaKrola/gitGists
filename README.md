@@ -29,10 +29,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 
 ### Done from Todo list
-[X] - read GitHub API v3 documentation about gists
-[X] - chose request's
-[X] - FOLDER ORGANIZATION
-[X] - add scss to the project
-[X] - implemented user gists search, and default search of all gists if search field is empty
-[X] - added base styling
-[X] - created component schema
+- [X] - read GitHub API v3 documentation about gists
+- [X] - chose request's
+- [X] - FOLDER ORGANIZATION
+- [X] - add scss to the project
+- [X] - implemented user gists search, and default search of all gists if search field is empty
+- [X] - added base styling
+- [X] - created component schema

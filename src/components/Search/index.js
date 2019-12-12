@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   form: {
-    position: 'relative'
+    position: 'relative',
   },
   button: {
     position: 'absolute',
@@ -25,20 +25,27 @@ const useStyles = makeStyles(theme => ({
   },
   input: {
     padding: '20px 10px',
-    maxWidth: 1200,
     width: '100%',
     textAlign: 'left',
-    fontSize: 20
+    fontSize: 20,
+    maxWidth: 1175
   }
 }));
-export default function Search() {
+export default function Search({fetchSearchGists, searchFieldValue, setSearchFieldValue}) {
   const classes = useStyles();
+  
   return (
-    <div>
-      <form action="#" className={classes.form}>
-        <input type="text" placeholder="Find gist you need..." className={classes.input} />
+    <div className="search">
+      <form onSubmit={(event) => {fetchSearchGists(event, searchFieldValue)}} action="#" className={classes.form}>
+        <input
+          type="text"
+          placeholder="Find gist you need..."
+          className={classes.input}
+          value={searchFieldValue}
+          onChange={(e) => setSearchFieldValue(e.target.value)}
+        />
         <button type="submit" className={classes.button}>
-            <SearchIcon style={{ color: '#fff' }} />
+          <SearchIcon style={{ color: '#fff' }} />
         </button>
       </form>
     </div>

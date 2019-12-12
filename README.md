@@ -22,17 +22,17 @@ Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### Todo
-* read GitHub API v3 documentation about gists
-* choose request's
-* choose the fields of request and create schema (on paper)
-* create components schema
 * choose the lib for 'code-block' preview
-* design state structure (schematicaly)
 * add fonts and font-awesome
-* on enter/button click search
-* complete to implement structure
-* add some base styling
+* create pagination
+* create search memoization
 
 
 ### Done from Todo list
+[X] - read GitHub API v3 documentation about gists
+[X] - chose request's
 [X] - FOLDER ORGANIZATION
+[X] - add scss to the project
+[X] - implemented user gists search, and default search of all gists if search field is empty
+[X] - added base styling
+[X] - created component schema

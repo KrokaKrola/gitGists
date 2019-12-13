@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -31,9 +31,9 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 1175
   }
 }));
-export default function Search({fetchSearchGists, searchFieldValue, setSearchFieldValue}) {
+export default function Search({fetchSearchGists}) {
   const classes = useStyles();
-  
+  const [searchFieldValue, setSearchFieldValue] = useState('');
   return (
     <div className="search">
       <form onSubmit={(event) => {fetchSearchGists(event, searchFieldValue)}} action="#" className={classes.form}>

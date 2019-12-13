@@ -1,1 +1,9 @@
-@import './components/GistsList/index.scss';
+@import './components/GistsList/index';
+@import "./components/Filters/filters";
+@import "./components/ViewType/viewType";
+
+.viewControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

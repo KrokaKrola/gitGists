@@ -23,9 +23,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Todo
 - [ ] choose the lib for 'code-block' preview
-- [ ] add fonts and font-awesome
 - [ ] create pagination
 - [ ] create search memoization
+- [ ] make filter by date, name
 
 
 ### Done from Todo list

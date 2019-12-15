@@ -1,0 +1,10 @@
+.pagination {
+  transition: .2s ease;
+  &.isLoading {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  button {
+    margin: 0 10px;
+  }
+}

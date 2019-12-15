@@ -1,9 +1,26 @@
 @import './components/GistsList/index';
 @import "./components/Filters/filters";
 @import "./components/ViewType/viewType";
-
+@import "./components/Pagination/index";
+* {
+  font-family: Roboto;
+}
 .viewControls {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: .2s ease;
+
+  &.isLoading {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+
+* {
+  &.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
 }

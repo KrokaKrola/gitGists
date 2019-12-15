@@ -1,51 +1,59 @@
-import React, {useState} from 'react';
-import SearchIcon from '@material-ui/icons/Search';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { useState } from "react";
+import SearchIcon from "@material-ui/icons/Search";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   form: {
-    position: 'relative',
+    position: "relative"
   },
   button: {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translateY(-50%)',
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
     right: 20,
-    background: '#3f51b5',
-    borderRadius: '50%',
-    outline: 'none',
+    background: "#3f51b5",
+    borderRadius: "50%",
+    outline: "none",
     width: 45,
     height: 45,
-    boxShadow: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
+    boxShadow: "none",
+    border: "none",
+    cursor: "pointer",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
   },
   input: {
-    padding: '20px 10px',
-    width: '100%',
-    textAlign: 'left',
+    padding: "20px 10px",
+    width: "100%",
+    textAlign: "left",
     fontSize: 20,
     maxWidth: 1175
   }
 }));
-export default function Search({fetchSearchGists}) {
+
+export default function Search({ fetchSearchGists, refElement }) {
   const classes = useStyles();
-  const [searchFieldValue, setSearchFieldValue] = useState('');
+  const [searchFieldValue, setSearchFieldValue] = useState("");
   return (
     <div className="search">
-      <form onSubmit={(event) => {fetchSearchGists(event, searchFieldValue)}} action="#" className={classes.form}>
+      <form
+        onSubmit={event => {
+          fetchSearchGists(event, searchFieldValue);
+        }}
+        action="#"
+        className={classes.form}
+      >
         <input
           type="text"
-          placeholder="Find gist you need..."
+          placeholder="Find user gists ..."
           className={classes.input}
           value={searchFieldValue}
-          onChange={(e) => setSearchFieldValue(e.target.value)}
+          ref={refElement}
+          onChange={e => setSearchFieldValue(e.target.value)}
         />
         <button type="submit" className={classes.button}>
-          <SearchIcon style={{ color: '#fff' }} />
+          <SearchIcon style={{ color: "#fff" }} />
         </button>
       </form>
     </div>

@@ -2,4 +2,24 @@
 
 .gistList {
   margin-top: 20px;
+  margin-bottom: 40px;
+
+  img {
+    display: none;
+    width: 70px;
+    height: 70px;
+  }
+
+  span {
+    display: none;
+  }
+
+  &.detailedView {
+    img {
+      display: block;
+    }
+    span {
+      display: block;
+    }
+  }
 }

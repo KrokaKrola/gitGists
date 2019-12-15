@@ -1,6 +1,8 @@
 # gitgists
 React application to get gist's and preview it's code.
 
+Live preview [https://build-kwev3t2hv.now.sh/](https://build-kwev3t2hv.now.sh/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -22,17 +24,12 @@ Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### Todo
-- [ ] choose the lib for 'code-block' preview
-- [ ] create pagination
-- [ ] create search memoization
-- [ ] make filter by date, name
-
-
-### Done from Todo list
-- [X] - read GitHub API v3 documentation about gists
-- [X] - chose request's
-- [X] - FOLDER ORGANIZATION
-- [X] - add scss to the project
-- [X] - implemented user gists search, and default search of all gists if search field is empty
-- [X] - added base styling
-- [X] - created component schema
+- [X] create pagination
+- [X] make filter by date, name
+- [X] read GitHub API v3 documentation about gists
+- [X] chose request's
+- [X] FOLDER ORGANIZATION
+- [X] add scss to the project
+- [X] implemented user gists search, and default search of all gists if search field is empty
+- [X] added base styling
+- [X] created component schema

@@ -1,5 +1,5 @@
 # gitgists
-React application to get gist's and preview it's code.
+React application to get gist's
 
 Live preview [https://build-kwev3t2hv.now.sh/](https://build-kwev3t2hv.now.sh/)
 
